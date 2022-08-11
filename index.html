@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="filter">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16.172 5.73484H16.9543C17.2411 5.73484 17.4758 5.47678 17.4758 5.16137C17.4758 4.84596 17.2411 4.58789 16.9543 4.58789H16.172C15.8852 4.58789 15.6505 4.84596 15.6505 5.16137C15.6505 5.47678 15.8852 5.73484 16.172 5.73484Z"
+          fill="white"
+        />
+        <path
+          d="M23.8902 0.630824C23.7077 0.229391 23.3427 0 22.9515 0H1.04846C0.657335 0 0.292284 0.258064 0.109758 0.630824C-0.0727673 1.03226 -0.0206171 1.49104 0.214059 1.83513L9.41857 14.5663V22.853C9.41857 23.2832 9.62717 23.6559 9.96614 23.8566C10.1226 23.9427 10.279 24 10.4616 24C10.6702 24 10.8788 23.9427 11.0613 23.7993L13.9556 21.5914C14.3728 21.2473 14.6075 20.7312 14.6075 20.1864V14.5376L23.7859 1.83513C24.0206 1.49104 24.0728 1.03226 23.8902 0.630824ZM13.6688 13.9928C13.6167 14.0789 13.5645 14.1935 13.5645 14.3369V20.1577C13.5645 20.3584 13.4863 20.5305 13.3559 20.6452L10.4616 22.853V14.3369C10.4616 14.1362 10.3833 13.9642 10.253 13.8781L4.36 5.73477H13.8253C14.1121 5.73477 14.3468 5.4767 14.3468 5.16129C14.3468 4.84588 14.1121 4.58781 13.8253 4.58781H3.65597C3.6299 4.58781 3.57775 4.58781 3.55167 4.58781L1.04846 1.14695H22.9515L13.6688 13.9928Z"
+          fill="white"
+        />
+      </svg>
+      <span>Фильтр</span>
+    </a>
+    <header class="header">
+      <div class="header__search search">
+        <div class="search__container">
+          <input type="text" placeholder="Поиск" class="header__search-input" />
+          <button class="search__btn">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.5071 7.23412C13.5071 10.7019 10.7072 13.5098 7.25735 13.5098C3.80749 13.5098 1.00757 10.7019 1.00757 7.23412C1.00757 3.76639 3.80749 0.958496 7.25735 0.958496C10.7072 0.958496 13.5071 3.76639 13.5071 7.23412Z"
+                stroke="white"
+              />
+              <line
+                y1="-0.5"
+                x2="10.2015"
+                y2="-0.5"
+                transform="matrix(0.705754 0.708457 -0.705754 0.708457 11.3077 12.2026)"
+                stroke="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="categories">
+      <div class="categories__container">
+        <div class="categories__gender">
+          <button class="categories__gender-btn categories__gender-woman">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.19275 13.5375L6.06599 12.8196L6.23176 12.1564C5.16951 12.0125 4.13926 11.6902 3.18453 11.2032C3.07811 11.1394 3.01019 11.0272 3.00301 10.9034C2.99549 10.7796 3.04896 10.6598 3.14628 10.5827C3.15978 10.5737 4.50003 9.46762 4.50003 5.63532C4.50003 2.40326 5.25677 0.764386 6.75003 0.764386H6.97503C7.49309 0.208152 8.24431 -0.0698417 9.00002 0.0150247C10.4093 0.0150247 13.5 1.4306 13.5 5.63532C13.5 9.46762 14.8403 10.5737 14.85 10.5812C15.0158 10.7051 15.0497 10.9399 14.9257 11.1057C14.8966 11.1445 14.8602 11.1774 14.8185 11.2024C13.8646 11.694 12.833 12.0175 11.769 12.1586L11.9348 12.8203L14.8072 13.5382C16.6853 14.0051 18.0027 15.6915 18 17.6253C18 17.8322 17.8321 18 17.625 18H0.374987C0.167881 18 -2.47955e-05 17.8322 -2.47955e-05 17.6253C-0.00308418 15.6913 1.31436 14.0044 3.19275 13.5375Z"
+                fill="#0008C1"
+              />
+            </svg>
+          </button>
+          <button class="categories__gender-btn categories__gender-man">
+            <svg
+              width="19"
+              height="18"
+              viewBox="0 0 19 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_312_187)">
+                <path
+                  d="M18.989 17.5343L18.514 15.7343C18.2887 14.861 17.6054 14.1588 16.705 13.875L13.2217 12.7755C12.3722 12.4403 11.9835 11.1443 11.8996 10.6522C12.5469 10.1423 12.9633 9.41685 13.0634 8.62499C13.0491 8.48974 13.0828 8.35383 13.1591 8.23873C13.2826 8.20944 13.3836 8.1257 13.4307 8.01373C13.6586 7.49088 13.8016 6.93837 13.855 6.37499C13.8551 6.34437 13.8512 6.31389 13.8431 6.28425C13.7864 6.06533 13.6506 5.87215 13.4592 5.73824V3.74998C13.4592 2.54173 13.0697 2.04599 12.6596 1.75873C12.5813 1.17675 11.9234 0 9.50089 0C7.35163 0.0819844 5.62909 1.71387 5.54255 3.75001V5.73827C5.35114 5.87218 5.21528 6.06537 5.15858 6.28429C5.15056 6.31392 5.14659 6.34444 5.1467 6.37502C5.19999 6.93868 5.34305 7.49145 5.57105 8.01453C5.60534 8.12053 5.69525 8.20206 5.80855 8.2298C5.85289 8.25078 5.93602 8.35956 5.93602 8.62506C6.03662 9.41917 6.45551 10.1463 7.10611 10.6561C7.02299 11.1473 6.63664 12.4426 5.81096 12.7696L2.29674 13.875C1.3971 14.1588 0.714283 14.8603 0.488584 15.7328L0.0135835 17.5328C-0.040188 17.7336 0.0879879 17.9376 0.299882 17.9885C0.331537 17.9962 0.364082 18 0.396738 18.0001H18.6051C18.8237 18 19.0009 17.8321 19.0008 17.625C19.0008 17.5943 18.9968 17.5639 18.989 17.5343Z"
+                  fill="#939393"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_312_187">
+                  <rect width="19" height="18" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+        <div class="categories__options">
+          <button class="categories__options-btn">
+            <img
+              src="./img/categories/ring.png"
+              class="options__btn-img"
+              alt="Кольцо"
+            />
+            Кольцо
+          </button>
+          <button class="categories__options-btn">
+            <img
+              src="./img/categories/necklace.png"
+              class="options__btn-img"
+              alt="Колье"
+            />
+            Колье
+          </button>
+          <button class="categories__options-btn">
+            <img
+              src="./img/categories/earrings.png"
+              class="options__btn-img"
+              alt="Серьги"
+            />
+            Серьги
+          </button>
+          <button class="categories__options-btn">
+            <img
+              src="./img/categories/chain.png"
+              class="options__btn-img"
+              alt="Цепь"
+            />
+            Цепь
+          </button>
+          <button class="categories__options-btn">
+            <img
+              src="./img/categories/brooch.png"
+              class="options__btn-img"
+              alt="Брошь"
+            />
+            Брошь
+          </button>
+          <button class="categories__options-btn">
+            <img
+              src="./img/categories/pendants.png"
+              class="options__btn-img"
+              alt="Кулоны"
+            />
+            Кулоны
+          </button>
+          <button class="categories__options-btn">
+            <img
+              src="./img/categories/bracelets.png"
+              class="options__btn-img"
+              alt="Браслеты"
+            />
+            Браслеты
+          </button>
+          <button class="categories__btn-add">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.55">
+                <path
+                  d="M7.88672 1.99707V13.9971"
+                  stroke="#1F1617"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1.88672 7.99707H13.8867"
+                  stroke="#1F1617"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="options">
+      <div class="options__container">
+        <div class="options__categ">
+          <button class="options__btn options__btn-active">кольцo</button
+          ><button class="options__btn">обручальные</button
+          ><button class="options__btn">кольца кастеты</button
+          ><button class="options__btn">коктейльные</button
+          ><button class="options__btn">помолвочные</button>
+        </div>
+        <button class="categories__btn-add options__btn-add">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.55">
+              <path
+                d="M7.88672 1.99707V13.9971"
+                stroke="#1F1617"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1.88672 7.99707H13.8867"
+                stroke="#1F1617"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="posts">
+      <div class="posts__container">
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_1.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_2.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_3.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_4.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_5.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_6.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_7.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_8.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_9.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_10.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_11.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_12.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_13.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_14.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_15.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_16.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_17.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_18.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_19.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_20.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_21.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_22.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_23.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_24.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_25.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_26.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_27.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_28.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_29.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+        <a href="#" class="posts__post post">
+          <img src="./img/posts/Photo_30.png" alt="img" class="post__img" />
+          <div class="post__info">
+            <p class="post__info-id">A555</p>
+            <h5 class="post__info-price">2500$</h5>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
