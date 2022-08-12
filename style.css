@@ -57,7 +57,7 @@ body {
     border-radius: 40px;
     padding: 6px 9px 6px 7px;
     margin-top: 3px;
-    margin-left: -40px;
+    margin-left: -37px;
 }
 
 .categories__container {
@@ -150,6 +150,7 @@ body {
 .options__container {
     display: flex;
     justify-content: center;
+    margin: 0 15px;
 }
 
 .options__categ::-webkit-scrollbar {
@@ -185,6 +186,7 @@ body {
 
 .options__btn-active {
     border-top: 6px solid #0008c1;
+    font-weight: bold;
 }
 
 .options__btn-active {
@@ -291,6 +293,10 @@ body {
 @media only screen and (max-width: 990px) {
     .posts__container {
         grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .options__btn {
+        border-top: none;
     }
 }
 
