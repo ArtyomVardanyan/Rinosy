@@ -29,12 +29,21 @@ body {
     background-color: #fff;
     width: 100%;
     margin-bottom: 40px;
+    padding: 0 15px;
 }
 .header__search {
+    max-width: 1114px;
+    margin: 0 auto;
     padding: 17px 0 12px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.logo {
+    width: 120px;
+}
+
 .header__search-input {
     width: 378px;
     background: #e8eaeb;
@@ -294,7 +303,7 @@ body {
     .posts__container {
         grid-template-columns: repeat(4, 1fr);
     }
-    
+
     .options__btn {
         border-top: none;
     }
@@ -314,15 +323,29 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
     .header__search-input {
-        width: 350px;
+        width: 300px;
     }
     .categories__options-btn {
         margin-right: 10px;
     }
 }
+
+@media only screen and (max-width: 480px) {
+  .logo{
+    width: 90px;
+    height: 30px;
+  }
+    .header__search-input {
+        width: 250px;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     .categories__options-btn {
         margin-right: 5px;
+    }
+    .header__search-input {
+        width: 200px;
     }
 }
 
