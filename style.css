@@ -103,7 +103,6 @@ body {
 
 .categories__options {
     display: flex;
-    justify-content: center;
     overflow: auto;
 }
 
@@ -172,7 +171,6 @@ body {
 
 .options__categ {
     display: flex;
-    justify-content: center;
     margin-bottom: 20px;
     overflow: auto;
 }
